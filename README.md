@@ -6,7 +6,7 @@ Solutions are uploaded as .cpp files, when possible I will discuss the time and 
 ## Progress
 | ☑             | Chapter #     |           Chapter Name            | # of problems | # problems solved |
 | ------------- | ------------- | --------------------------------- | ------------- | ------------- |
-| ☐             | 1             | Arrays and Strings                | 9             | 0            |
+| ☐             | 1             | Arrays and Strings                | 9             | 1            |
 | ☐             | 2             | Linked Lists                      | 8             | 0            |
 | ☐             | 3             | Stacks and Queues                 | 6             | 0            |
 | ☐             | 4             | Trees and Graphs                  | 12            | 0            |
