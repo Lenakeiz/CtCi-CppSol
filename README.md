@@ -1,7 +1,9 @@
 # CtCi-CppSol
-A repositoruy where I will work on the exercises from Cracking the code interview 6th edition
+A repository where I am working on the exercises from Cracking the Code Interview 6th edition
 
-Solutions are uploaded as .cpp files, when possible I will discuss the time and space complexity (big-O)
+Solutions are uploaded as .cpp files, when possible I will discuss the time and space complexity (big-O) of the solution implemented.
+
+I will also include the solutions from the book.
 
 ## Progress
 | ☑             | Chapter #     |           Chapter Name            | # of problems | # problems solved |
