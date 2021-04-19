@@ -26,12 +26,10 @@ string StringCompression(string strA)
 		}
 		else
 		{
-			if (currCopyCounter + 2 < letA)
+			if (currCopyCounter < letA)
 			{
-				strAcopy[currCopyCounter] = currCharacter;
-				currCopyCounter++;
-				strAcopy[currCopyCounter] = to_string(charCount)[0];
-				currCopyCounter++;
+				strAcopy[currCopyCounter++] = currCharacter;
+				strAcopy[currCopyCounter++] = to_string(charCount)[0];
 
 				currCharacter = strA[i + 1];
 				charCount = 1;
@@ -43,15 +41,19 @@ string StringCompression(string strA)
 			}
 		}
 	}
+
+	strAcopy[currCopyCounter++] = currCharacter;
+	strAcopy[currCopyCounter++] = to_string(charCount)[0];
+
 	return strAcopy;
 }
 
 int main()
 {
-	vector<string> testValuesA = { "aabcccccaaa", "aaacccSSSD"};
+	vector<string> testValuesA = { "aabcccccaaa","abcdeabcde","aabccccffffGREcdea", "aabccccffffdddddea" }; //a2b1c4f4G1R1E1c1d1e1a1
 	for (unsigned int i = 0; i < testValuesA.size(); i++)
 	{
-		cout << testValuesA[i] << " : " << StringCompression(testValuesA[i]) << endl;
+		cout << testValuesA[i] << ":" << StringCompression(testValuesA[i]) << endl;
 	}
 	return 0;
 }
