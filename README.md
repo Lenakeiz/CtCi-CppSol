@@ -8,7 +8,7 @@ There are also the solution from the book.
 ## Progress
 | ☑             | Chapter #     |           Chapter Name            | # of problems | # problems solved |
 | ------------- | ------------- | --------------------------------- | ------------- | ------------- |
-| ☐             | 1             | Arrays and Strings                | 9             | 6            |
+| ☐             | 1             | Arrays and Strings                | 9             | 7            |
 | ☐             | 2             | Linked Lists                      | 8             | 0            |
 | ☐             | 3             | Stacks and Queues                 | 6             | 0            |
 | ☐             | 4             | Trees and Graphs                  | 12            | 0            |
