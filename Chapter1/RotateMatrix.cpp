@@ -5,7 +5,7 @@
 #include <algorithm>
 
 using namespace std;
-static const int dim = 4;
+static const int dim = 5;
 
 void swapValues(int& a, int& b)
 {
@@ -28,18 +28,21 @@ void rotateMatrix90(T (&matrix)[dim][dim])
 
 	for (int i = 0; i < dim/2; i++)
 	{
+		int first = i;
+		int last = dim - i - 1;
 		//Roating means doing the following swap
-		for (int j = 0; j < dim - i - 1; j++)
+		for (int j = first; j < last; j++)
 		{
-			int temp = matrix[i][j];
+			int offset = j - first;
+			int temp = matrix[first][j];
 			//Top row with left column
-			matrix[i][j] = matrix[dim-j-1][i];
+			matrix[first][j] = matrix[last - offset][first];
 			//Left column with bottom row
-			matrix[dim - j - 1][i] = matrix[dim - i - 1][dim - j - 1];
+			matrix[last - offset][first] = matrix[last][last - offset];
 			//Bottom row with right column
-			matrix[dim - i - 1][dim - j - 1] = matrix[j][dim - i - 1];
+			matrix[last][last - offset] = matrix[j][last];
 			//RIght column with top row
-			matrix[j][dim - i - 1] = temp;
+			matrix[j][last] = temp;
 		}
 	}
 }
