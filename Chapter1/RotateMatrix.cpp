@@ -22,6 +22,8 @@ void swapValues(int(&a) [dim], int (&b) [dim])
 	}
 }
 
+//Complexity is O(1) as we are operating on the original array
+//Execution time is O(n^2) because the circular loop looks at all the elements in the matrix
 template<typename T, int dim>
 void rotateMatrix90(T (&matrix)[dim][dim])
 {
